@@ -1,0 +1,23 @@
+extends main
+block content
+  <h1>IEEE CIS AU Core Committee for the year 2023-2024</h1>
+  <br>
+  <br>
+  <div>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Membership ID</th>
+  <th>Designation</th>
+  <th>Email</th>
+  <th>Contact Number</th>
+  </tr>
+  each mem in data
+   tr 
+    td #{mem.Name}
+    td #{mem.MembershipID}
+    td #{mem.Designation}
+    td #{mem.Email}
+    td #{mem.Phone}
+  </table>
+  </div>

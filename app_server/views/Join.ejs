@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join CIS</title>
+    <link rel="stylesheet" href="/stylesheets/Home.css">
+    <link rel="stylesheet" href="/stylesheets/Join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-section">
+            <img id="logo" src="/images/LOGO.png" alt="IEEE CIS LOGO">
+            <p id="message">
+            <pre>
+IEEE COMPUTATIONAL INTELLIGENCE SOCIETY CHAPTER
+ANURAG UNIVERSITY </pre>
+            </p>
+        </div>
+        <div class="right-section">
+            <a href="http://localhost:3000/"><button class="scrollToSectionButton"
+                    onclick="scrollToSection">Home</button></a>
+            <a href="http://localhost:3000/CoreCommittee"><button class="scrollToSectionButton"
+                    onclick="scrollToSection('coreCommittee')">Core Committee</button></a>
+            <a href="http://localhost:3000/Members"><button class="scrollToSectionButton"
+                    onclick="scrollToSection('about')">Members</button></a>
+            <a href="http://localhost:3000/Events"><button class="scrollToSectionButton"
+                    onclick="scrollToSection('events')">Events</button></a>
+            <a href="http://localhost:3000/Join"><button class="scrollToSectionButton"
+                    onclick="scrollToSection('coreCommittee')">Join CIS</button></a>
+            <a href="http://localhost:3000/ContactUs"><button class="scrollToSectionButton"
+                    onclick="scrollToSection('contactUs')">Contact Us</button></a>
+        </div>
+    </header>
+
+    <!-- enter body name roll no dept phone num year-->
+    <section id="message1">
+        <p>
+            Fill the below form to join IEEE CIS AU. Our team will get back to you...
+        </p>
+    </section>
+    <section id="new">
+        <form action="#" method="post" id="form1">
+            <label for="name"> Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="rollNumber">Roll Number:</label>
+            <input type="text" id="rollNumber" name="rollNumber" required><br>
+
+            <label for="department">Department:</label>
+            <select name="dept" id="dept">
+                <option value="select">Select</option>
+                <option value="AI">AI</option>
+                <option value="AIML">AIML</option>
+                <option value="Chem">Chemical</option>
+                <option value="civ">Civil</option>
+                <option value="CS">CS</option>
+                <option value="CSE">CSE</option>
+                <option value="DS">DS</option>
+                <option value="ECE">ECE</option>
+                <option value="ECM">ECM</option>
+                <option value="EEE">EEE</option>
+                <option value="IT">IT</option>
+                <option value="ME">MECH</option>
+            </select>
+            <br>
+
+            <label for="year">Year:</label>
+            <select name="year" id="year">
+                <option value="select">Select</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select><br>
+
+            <label for="phone_num">Phone Number:</label>
+            <input type="tel" pattern="[0-9]{10}" id="phone_num" name="phone_num"><br>
+
+            <input type="submit" value="SUBMIT">
+        </form>
+    </section>
+
+    <div id="success-message">
+        <h3>Form Submitted Successfully!</h3>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Address</h4>
+                <p>IEEE CIS Chapter</p>
+                <p>IEEE Anurag University Student Branch</p>
+                <p>Hyderabad</p>
+                <p>Telangana</p>
+
+            </div>
+            <div class="footer-col">
+                <h4>Social handles</h4>
+                <ul class="links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/ieee-cis-student-chapter-ai-dept-anurag-university-12a468295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank">Linkedin</a>
+                        <span class="social-icons">
+                            <a class="linkedin"
+                                href="https://www.linkedin.com/in/ieee-cis-student-chapter-ai-dept-anurag-university-12a468295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/ieee_cis_au?igshid=MXNyeG5wcjByaTk5dQ=="
+                            target="_blank">Instagram</a>
+                        <span class="social-icons">
+                            <a class="instagram" href="https://instagram.com/ieee_cis_au?igshid=MXNyeG5wcjByaTk5dQ=="
+                                target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@IEEECISAU?feature=shared">Youtube</a>
+                        <span class="social-icons">
+                            <a class="youtube" href="https://youtube.com/@IEEECISAU?feature=shared" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Notifications</h4>
+                <p>
+                    Subscribe to receive notifications about our
+                    events, updates and many more.....
+                </p>
+                <form action="http://localhost:3000/notify" method="post">
+                    <input type="text" name="phone" placeholder="Enter your phone number" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="/scripts/Join.js"></script>
+</body>
+
+</html>

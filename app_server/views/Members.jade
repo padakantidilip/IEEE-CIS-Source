@@ -1,0 +1,27 @@
+extends main
+block content
+  <h1>IEEE CIS AU Members for the year 2023-2024</h1>
+  <br>
+  <br>
+  <div>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Membership ID</th>
+  <th>Role</th>
+  <th>Contact Number</th>
+  </tr>
+  each fac in facu
+   tr 
+    td #{fac.Name}
+    td #{fac.MembershipID}
+    td #{fac.Role}
+    td #{fac.Phone}
+  each stu in stud
+   tr 
+    td #{stu.Name}
+    td #{stu.MembershipID}
+    td #{stu.Role}
+    td #{stu.Phone}
+  </table>
+  </div>

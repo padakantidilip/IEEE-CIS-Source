@@ -1,0 +1,76 @@
+doctype html 
+html
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/CoreCommittee.css">
+    <link rel="stylesheet" href="/stylesheets/Join.css">
+    <title>IEEE CIS AU</title>
+    </head>
+    <body>
+    <header>
+    <div class="left-section">
+    <img id="logo" src="/images/LOGO.png" alt="IEEE CIS LOGO">
+    <p id="message">
+    <pre>
+    p IEEE COMPUTATIONAL INTELLIGENCE SOCIETY CHAPTER
+    p ANURAG UNIVERSITY </pre>
+    </p>
+    </div>
+    <div class="right-section">
+    <a href="http://localhost:3000/"><button class="scrollToSectionButton" onclick="scrollToSection">Home</button></a>
+    <a href="http://localhost:3000/CoreCommittee"><button class="scrollToSectionButton" onclick="scrollToSection('coreCommittee')">Core Committee</button></a>
+    <a href="http://localhost:3000/Members"><button class="scrollToSectionButton" onclick="scrollToSection('about')">Members</button></a>
+    <a href="http://localhost:3000/Events"><button class="scrollToSectionButton" onclick="scrollToSection('events')">Events</button></a>
+    <a href="http://localhost:3000/Join"><button class="scrollToSectionButton" onclick="scrollToSection('coreCommittee')">Join CIS</button></a>
+    <a href="http://localhost:3000/ContactUs"><button class="scrollToSectionButton" onclick="scrollToSection('contactUs')">Contact Us</button></a>
+    </div>
+    </header>
+    <br>
+    block content 
+    <br>
+    <section class="footer">
+    <div class="footer-row">
+    <div class="footer-col">
+    <h4>About us</h4>
+    <p>Welcome to IEEE AU Official Website</p>
+    <p>ieeecisau@anurag.edu.in</p>
+    </div>
+    <div class="footer-col">
+    <h4>Social handles</h4>
+    <ul class="links">
+    <li><a href="https://www.linkedin.com/in/ieee-cis-student-chapter-ai-dept-anurag-university-12a468295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank">Linkedin</a>
+    <span class="social-icons"><a class="linkedin"href="https://www.linkedin.com/in/ieee-cis-student-chapter-ai-dept-anurag-university-12a468295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank">
+    <i class="fab fa-linkedin"></i>
+    </a>
+    </span>
+    </li>
+    <li><a href="https://instagram.com/ieee_cis_au?igshid=MXNyeG5wcjByaTk5dQ==" target="_blank">Instagram</a>
+    <span class="social-icons"><a class="instagram" href="https://instagram.com/ieee_cis_au?igshid=MXNyeG5wcjByaTk5dQ==" target="_blank">
+    <i class="fab fa-instagram"></i>
+    </a>
+    </span>
+    </li>
+    <li>
+    <a href="https://youtube.com/@IEEECISAU?feature=shared">Youtube</a>
+    <span class="social-icons">
+    <a class="youtube" href="https://youtube.com/@IEEECISAU?feature=shared" target="_blank">
+    <i class="fab fa-youtube"></i>
+    </a>
+    </span>
+    </li>
+    </ul>
+    </div>
+    <div class="footer-col">
+    <h4>Notifications</h4>
+    <p>
+    p Subscribe to receive notifications about our events, updates and 
+    p many more.....
+    </p>
+    <form action="http://localhost:3000/notify" method="post">
+    <input type="text" name="phone" placeholder="Enter your phone number" required>
+    <button type="submit">SUBSCRIBE</button>
+    </form>
+    </div>
+    </div>
+    </section>
+
